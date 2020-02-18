@@ -1,0 +1,131 @@
+<!doctype html>
+<html>
+<head>
+
+<style>
+/* Bordered form */
+form {
+    border: 3px solid #f1f1f1;
+}
+
+/* Full-width inputs */
+input[type=text], input[type=password] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+/* Set a style for all buttons */
+button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+}
+
+/* Add a hover effect for buttons */
+button:hover {
+    opacity: 0.8;
+}
+
+/* Extra style for the cancel button (red) */
+.cancelbtn {
+    width: auto;
+    padding: 10px 18px;
+    background-color: #f44336;
+}
+
+/* Center the avatar image inside this container */
+.imgcontainer {
+    text-align: center;
+    margin: 24px 0 12px 0;
+}
+
+/* Avatar image */
+img.avatar {
+    width: 20%;
+height:200px;
+    border-radius: 50%;
+}
+
+/* Add padding to containers */
+.container {
+    padding: 16px;
+}
+
+/* The "Forgot password" text */
+span.psw {
+    float: right;
+    padding-top: 16px;
+}
+
+/* Change styles for span and cancel button on extra small screens */
+@media screen and (max-width: 300px) {
+    span.psw {
+        display: block;
+        float: none;
+    }
+    .cancelbtn {
+        width: 100%;
+    }
+}
+
+.foot{
+padding:15px 15px;
+text-align:center;
+text-decoration:none;
+display:inline-block;
+color:white;
+}
+footer
+{
+background:#000;
+padding:2%;
+color:white;
+font-size:15px;
+font-family:consolas;
+}
+
+</style>
+</head>
+<body>
+
+
+<form action="/action_page.php">
+  <div class="imgcontainer">
+    <img src="user.png" alt="Avatar" class="avatar">
+  </div>
+
+  <div class="container">
+    <label><b>Username</b></label>
+    <input type="text" placeholder="Enter Username" name="uname" required>
+
+    <label><b>Password</b></label>
+    <input type="password" placeholder="Enter Password" name="psw" required>
+
+    <button type="submit">Login</button>
+    <input type="checkbox" checked="checked"> Remember me
+  </div>
+
+  <div class="container" style="background-color:#f1f1f1">
+    <button type="button" class="cancelbtn">Cancel</button>
+  </div>
+</form>
+<footer >
+MUSCLE BUILDING
+<hr size="3px"  width="100%" align="center"><br> <br>
+contact&nbsp|&nbspCustomer Service<br><br><br>
+Links&nbsp&nbsp|&nbsp<a class="foot" href="">T&c</a>&nbsp<a class="foot" href="">Track Orders</a>&nbsp<a class="foot" href="">Shipping</a><br><br>
+Connect&nbsp|&nbsp<a class="foot"href="https://www.facebook.com">Facebook</a>&nbsp<a class="foot"href="https://twitter.com/login?lang=en">Twitter</a>&nbsp<a class="foot"href="https://www.instagram.com/">Instagram</a>
+<hr size="3px"  width="100%" align="center">
+Copyright 2017 muscle building
+</footer>
+
+</body>
+</html>

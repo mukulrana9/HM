@@ -1,0 +1,107 @@
+<!doctype html>
+<html>
+<head><title>form</title>
+<link rel="stylesheet" type="text/css" href="style1.css">
+<style>
+input[type=text], input[type=password] ,input[type=date],input[type=email]{
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 49%;
+}
+</style>
+
+</head>
+<header>
+
+<img src="logo.jpg" > <a id="top"></a> 
+
+<a class="head" href="front.html">HOME</a>||<a class="head" href="index.html">About us</a>||<a class="head" href="contact.html">Contact Us</a>||<a class="head" href="login.html">Login</a>
+ 
+
+Search<input type="search" name="s" border="2">
+
+</header>
+<hr width="100% size="3px">
+<h1>Create Your Account</h1>
+
+
+<form name="fn">
+
+<p>NAME<input type="text" name="First" placeholder="First Name" required><br><br>
+
+MIDDLE NAME<input type="text" name="Middle" placeholder="Middle Name"><br><br>
+
+LAST NAME<input type="text" name="Last" placeholder="Last Name"><br><br>
+
+DATE OF BIRTH<input type="date" name="dob" required><br><br>
+
+COUNTRY<input type="text" name="t1" placeholder="COUNTRY"><br><br>
+
+E-MAIL<input type="email" name="e" placeholder="E-MAIL" required><br><br>
+
+PASSWORD<input type="password" name="pass" placeholder="Password" maxlength="15" required><br><br>
+
+REPEAT PASSWORD<input type="password" name="pass2" placeholder="Reapeat Password"><br><br>
+
+<input type="checkbox" name="c">I Agree With the terms and condition<br><br>
+<button type="submit" onclick="fun()">Submit</button>&nbsp<button type="reset" value="reset">Reset</button>
+</p>
+</form>
+
+<script>
+function fun() {
+    var x = document.forms["fn"]["First"].value;
+    if (x == "") {
+        alert("Name must be filled");
+        }
+var x1 = document.forms["fn"]["Middle"].value;
+     if (x1 == "") {
+        alert("Middle Name must be filled");
+        }
+var x4 = document.forms["fn"]["dob"].value;
+    if (x4 == "") {
+        alert("Date of Birth must be entered");
+        }
+
+var x2 = document.forms["fn"]["pass"].value;
+
+     if (x2== "") {
+        alert("Password must be filled");
+      }  
+var x3 = document.forms["fn"]["pass2"].value;
+     if (x3!=x2) {
+        alert("please enter the same password");
+        }
+}
+</script>
+
+
+
+
+<footer >
+Fashion Hub
+<hr size="3px"  width="100%" align="center"><br> <br>
+contact&nbsp|&nbspCustomer Service<br><br><br>
+Links&nbsp&nbsp|&nbsp<a class="foot" href="">T&c</a>&nbsp<a class="foot" href="">Track Orders</a>&nbsp<a class="foot" href="">Shipping</a><br><br>
+Connect&nbsp|&nbsp<a class="foot"href="https://www.facebook.com">Facebook</a>&nbsp<a class="foot"href="https://twitter.com/login?lang=en">Twitter</a>&nbsp<a class="foot"href="https://www.instagram.com/">Instagram</a>
+<hr size="3px"  width="100%" align="center">
+Copyright 2017 muscle building
+</footer>
+
+
+
+
+</body>
+</html>
